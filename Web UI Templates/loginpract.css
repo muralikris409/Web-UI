@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100&family=Roboto:wght@300&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Noto Sans Tamil', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+body{
+	background:url("bgbg.jpg");
+	background-size:cover;
+}
+.log{
+	width:290px;
+	height:320px;
+	background:#fff;
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	
+	border-radius:10px;
+}
+
+.log input{
+	display:block;
+	position:relative;
+	left:50%;
+	transform:translatex(-50%);
+	margin-top:20px;
+	width:190px;
+	height:22px;
+	border-radius:3px;
+	border:0.5px solid #226de6;
+	text-align:center;
+	
+	
+}
+.log input[type="submit"]{
+	display:block;
+	position:relative;
+	left:50%;
+	transform:translatex(-50%);
+	margin-top:20px;
+	width:100px;
+	height:22px;
+	background:#397ae3;
+	color:white	;
+	border-radius:3px;
+	border:0.5px solid #397ae3;
+	text-align:center;
+	
+	
+}
+.log h2{
+	margin-top:10px;
+}
+.err{
+	
+	position:absolute;
+	width:290px;
+	height:30px;
+	border-radius:10px;
+	background:#fff;
+	left:50%;
+	top:30%;
+	z-index:;
+	transform:translate(-50%,-50%);
+	
+	
+}
+@keyframes animate{
+	0%{
+		top:0;
+	}
+	100%{
+		top:-12%;
+	}
+}
