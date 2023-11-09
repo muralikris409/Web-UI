@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<style>
+    *{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#1368f0;
+}
+.container{
+	background:#fff;
+	overflow:hidden;
+	width:360px;
+	height:380px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	z-index:1;
+	
+	
+}
+.loginbx{
+	background:#fff;
+	
+	width:360px;
+	height:380px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	z-index:1;
+	
+	
+}
+.loginbx h2{
+	margin:30px;
+}
+.loginbx input[type="text"],.loginbx input[type="password"]{
+	
+	
+	display:block;
+	margin:20px;
+	text-align:center;
+	padding:4px 55px;
+	background:#fff;
+	color:#000;
+	margin-top:30px;
+	margin-left:40px;
+	border:none;
+	letter-spacing:1.5px;
+	border-bottom:1.5px solid #000;
+	cursor:pointer;
+	
+}
+.loginbx input[type="text"]:focus,.loginbx input[type="password"]:focus{
+	
+	cursor:pointer;
+	display:block;
+	margin:20px;
+	text-align:center;
+	padding:4px 55px;
+	background:#fff;
+	color:#000;
+	margin-top:30px;
+	margin-left:40px;
+	border:none;
+	letter-spacing:1.5px;
+	border-bottom:1.5px solid #1368f0;
+	outline:none;
+	
+	
+}
+.loginbx input[type="checkbox"]
+{
+position:relative;
+	margin-top:0px;
+	left:25;
+	cursor:pointer;
+	top:-46;
+
+
+}
+.loginbx input[type="submit"]
+{
+padding:5.5px 80px ;
+margin-top:50px;
+letter-spacing:2px;
+margin-left:50px;
+margin-right:50px;
+background:#1368f0;
+color:#fff;
+cursor:pointer;
+border:none;
+border-radius:3px;
+
+
+}
+.loginbx p{
+     position:absolute;
+	top:52%;
+	left:20%;
+	
+	letter-spacing:2px;
+	
+}
+.loginbx h3{
+	font-size:16px;
+	margin-top:20px;
+	
+}
+.loginbx h4{
+	font-size:16px;
+	margin-top:2px;
+	color:#1368f0;
+	cursor:pointer;
+}
+.signup	{
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:360px;
+	height:380px;
+	background:#fff;
+	text-align:center;
+	justify-content:center;
+	align-items:center;
+	z-index:0;
+}
+.signup input:focus{
+	display:block;
+	margin-top:25px;
+	text-align:center;
+	letter-spacing:0.5;
+	margin-left:35px;
+	padding:2px 55px;
+	border:none;
+	border-bottom:1.5px solid #1368f0;
+	outline:none;
+}
+.signup input{
+	display:block;
+	margin-top:25px;
+	text-align:center;
+	letter-spacing:0.5;
+	margin-left:35px;
+	padding:2px 55px;
+	border:none;
+	border-bottom:1.5px solid #000;
+	outline:none;
+	cursor:pointer;
+	
+}
+
+.signup button{
+	display:block;
+	margin-top:25px;
+	text-align:center;
+	border-radius:3.5px;
+	margin-left:80px;
+	padding:6px 80px;
+	letter-spacing:0.5;
+	background:#1368f0;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	
+}
+.signup h3{
+	font-size:16px;
+	letter-spacing:0.5px;
+}
+.signup .log{
+	font-size:16px;
+	letter-spacing:0.5px;
+	color:#1368f0;
+	cursor:pointer;
+}
+.loginbx i{
+	margin-right:590px;
+}
+@keyframes animate{
+	0%{
+		top:10%;
+		
+	}
+
+	100%{
+		top:50%;
+	}
+	
+}
+</style>
+<body>
+<div class="container">
+<form name="loginform" action="Logindesign.php" method="POST">
+<div class="loginbx" id="loginbx">
+<h2><center>Login</center></h2>
+<input type="text" placeholder="Username" name="user" required/>
+<input type="password" placeholder="Password" name="pass" required/>
+<input type="checkbox" placeholder="Remember me"/>
+<p>Remember me</p>
+<input type="submit" value="Submit"/>
+<h3>New user?</h3><h4 id="sign">Signup</h4>
+</div>
+</form>
+<div class="signup" id="signup">
+<h2><center>Signup</h2>
+<input type="text" placeholder="First_name" />
+<input type="text" placeholder="Last_name"/>
+<input type="email" Placeholder="E-mail"/>
+<input type="Password" placeholder="Password"/>
+<input type="tel" placeholder="Phone_number">
+<Button value="Login">Submit</Button></center>
+<h3>Already have an account??</h3> <h3 class="log" id="log">Log-in</h3>
+</div>
+</div>
+<script>
+var x = document.getElementById("sign");
+var y = document.getElementById("loginbx");
+x.onclick=function(){
+y.style.display="none";
+a.style.animation="animate 2s";
+}
+var a = document.getElementById("signup");
+var b = document.getElementById("log");
+b.onclick=function(){
+a.style.display="none";
+y.style.animation="animate 2s";
+y.style.display="block";
+y.style.transition="0.5s";
+}
+
+</script>
+
+
+</body>
+</html>
