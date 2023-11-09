@@ -1,0 +1,123 @@
+<html>
+<head>
+<Title>registration</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Noto Sans Tamil', sans-serif;
+	
+}
+body{
+	
+	overflow:hidden;
+	background:url(project1.jpg);
+	background-repeat:;
+}
+.loginbx{
+	display:block;
+	width:40%;
+	height:100%;
+	background:#fff;
+	position:absolute;
+	top:0;
+	left:60%;
+	text-align:center;
+}
+.loginbx h1{
+	position:relative;
+	text-align:center;
+	display:block;
+	margin:20px;
+	
+}
+.loginbx form{
+		position:relative;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-60%);
+}
+
+.loginbx input{
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	display:block;
+	margin:20px;
+	padding:5px 110px;
+	text-align:center;
+	margin-bottom:35px;
+	border:1px solid #818285;
+	border-radius:3px;
+	color:black;
+	cursor:pointer;
+}
+.loginbx button{
+	position:relative;
+    top:25%;
+	left:50%;
+	transform:translate(-50%,-75%);
+	display:block;
+	margin:20px;
+	padding:5px 38px;
+	border-radius:3px;
+	background:#0099ff;
+	color:white;
+	border:none;
+	cursor:pointer;
+	
+}
+.loginbx input:focus{
+	position:relative;
+	top:25%;
+	left:50%;
+	transform:translate(-50%,-75%);
+	outline:none;
+	display:block;
+	margin:20px;
+	padding:5px 110px;
+	text-align:center;
+	margin-bottom:35px;
+	border:2px solid #0099ff;
+	border-radius:3px;
+	color:black;
+	transition:0.8s;
+	
+	
+}
+.loginbx button:hover{
+	position:relative;
+    top:25%;
+	left:50%;
+	transform:translate(-50%,-75%);
+	display:block;
+	margin:20px;
+	padding:5px 38px;
+	border-radius:3px;
+	background:#0099ff;
+	color:white;
+	border:none;
+	opacity:0.8;
+	transition:0.8s;
+	
+}
+</style>
+<body>
+
+<div class="loginbx">
+<h1>User Registration</h1>
+<form name="myform" action="Register.php" method="post">
+<input type="text" placeholder="Name" id="Name" name="Name"/>
+<input type="email" placeholder="Mail-ID" id="Mail-ID" name="Mail"/>
+<input type="tel" placeholder="Mobile Number" id="MobileNO" name="Number"/>
+<input type="password" Placeholder="Password" id="Password" name="Pass"/>
+<button type="submit" >Register</button>
+</div>
+
+
+</form>
+</body>
+</html>
